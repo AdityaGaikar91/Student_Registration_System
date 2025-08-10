@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+    }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        form button {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        form button:hover {
+            background-color: #388e3c;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Scrollable Table */
+        #tableWrapper {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 640px) {
+            table thead {
+                display: none;
+            }
+
+            table, table tbody, table tr, table td {
+                display: block;
+                width: 100%;
+            }
+
+            table tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background: #fefefe;
+            }
+
+            table td {
+                text-align: right;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                color: #333;
+            }
+        }
